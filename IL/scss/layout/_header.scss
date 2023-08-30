@@ -1,0 +1,56 @@
+@import "./navbar";
+@import "../abstract/variables";
+@import "../abstract/functions";
+
+%headerDesign {
+  height: 100vh;
+  width: 100%;
+  background-color: $mainLightColor;
+  .nav-bar {
+    @extend %navigationBar;
+  }
+
+  .landing {
+    padding: 0 spacer(3);
+    display: flex;
+    justify-content: space-around;
+    height: calc(100% - 56px);
+    align-items: center;
+    &-title {
+      display: flex;
+      flex-direction: column;
+      gap: spacer(3);
+      span {
+        font-weight: 500;
+        &:first-child {
+          font-size: 64px;
+          max-width: 350px;
+        }
+        &:last-child {
+          font-size: 24px;
+          position: relative;
+          padding-bottom: spacer(2);
+          &::before {
+            content: "";
+            position: absolute;
+            width: 35%;
+            height: 1px;
+            background-color: #000;
+            bottom: 0;
+          }
+        }
+      }
+    }
+    &-slider {
+      display: flex;
+      justify-content: center;
+      .slider img {
+        width: spacer(72);
+        transition: 0.5s;
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+  }
+}

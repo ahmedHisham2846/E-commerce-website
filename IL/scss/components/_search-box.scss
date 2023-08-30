@@ -1,0 +1,16 @@
+@import "../abstract/functions";
+@import "../abstract/colors";
+
+%searchBox {
+  margin-top: spacer(1);
+  padding-left: spacer(2);
+  border-radius: 7px;
+  height: 35px;
+  width: 26.5%;
+  border: solid 1px transparent;
+  outline: none;
+  transition: 1s;
+  &:focus{
+    border-color: $mainDarkcolor;
+  }
+}

@@ -1,0 +1,105 @@
+@import "../base/normalize";
+@import "../abstract/variables";
+@import "../abstract/colors";
+@import "../abstract/functions";
+@import "../abstract/mixins";
+@import "../components/goto-top";
+@import "../components/button";
+@import "../layout/header";
+@import "../layout/footer";
+@import "../layout/features";
+@import "../components/label";
+
+.container {
+  @include container();
+}
+
+* {
+  @extend %normalize;
+}
+
+body {
+  font-family: $siteFontFamily;
+  > i {
+    @extend %gotoTop;
+
+    &.d-none {
+      @extend %diplayNone;
+    }
+  }
+}
+
+header {
+  @extend %headerDesign;
+  .nav-bar {
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+}
+
+.intro {
+  padding: spacer(5) 0;
+  .container {
+    padding: spacer(5) 0;
+    .intro-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: spacer(3);
+      div {
+        font-size: $siteBigFontSize;
+        font-weight: 600;
+      }
+      p {
+        color: $textGrayColor;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        width: 644px;
+      }
+    }
+  }
+}
+
+.contact-box {
+  padding: spacer(5) 0;
+  .container {
+    padding: spacer(5) 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @media (max-width: 992px) {
+      justify-content: space-evenly;
+      flex-direction: row;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: spacer(5);
+
+      .info-card {
+        display: flex;
+        gap: spacer(3);
+        align-items: flex-start;
+
+        i {
+          padding-top: spacer(1);
+        }
+
+        .info-description {
+          display: flex;
+          flex-direction: column;
+          gap: spacer(2);
+          align-items: flex-start;
+          div{}
+          p{}
+        }
+      }
+    }
+  }
+}

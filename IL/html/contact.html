@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../scss/pages/contact.css" />
+  </head>
+  <body>
+    <i class="fa-solid fa-up-long d-none"></i>
+    <header>
+      <div class="nav-bar">
+        <div class="container">
+          <button class="humporgar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <nav>
+            <ul>
+              <li>
+                <a href="../../index.html" class="text-active">Home</a>
+                <div></div>
+              </li>
+              <li>
+                <a href="./dashboard.html">Dashboard</a>
+                <div></div>
+              </li>
+              <li>
+                <a href="./about.html">About</a>
+                <div></div>
+              </li>
+              <li>
+                <a href="./contact.html">Contact</a>
+                <div></div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="landing">
+        <div class="landing-title">
+          <span>E-Commerce Web Site</span>
+          <span>Shop Now</span>
+        </div>
+        <div class="landing-slider">
+          <div class="slider">
+            <img src="../images/contactLandingImage.png" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="intro">
+      <div class="container">
+        <div class="intro-text">
+          <div>Get In Touch With Us</div>
+          <p>
+            For More Information About Our Product & Services. Please Feel Free
+            To Drop Us An Email. Our Staff Always Be There To Help You Out. Do
+            Not Hesitate!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-box">
+      <div class="container">
+        <div class="contact-info">
+          <div class="info-card">
+            <i class="fa-solid fa-location-dot"></i>
+            <div class="info-description">
+              <div>Address</div>
+              <p>236 5th SE Avenue, New York NY10000, United States</p>
+            </div>
+          </div>
+
+          <div class="info-card d-flex gap-3 align-items-start">
+            <i class="pt-1 fa-solid fa-phone"></i>
+            <div
+              class="info-description d-flex flex-column gap-2 align-items-start"
+            >
+              <div>Phone</div>
+              <p>Mobile: +(84) 546-6789 Hotline: +(84) 456-6789</p>
+            </div>
+          </div>
+
+          <div class="info-card d-flex gap-3 align-items-start">
+            <i class="pt-1 fa-solid fa-clock"></i>
+            <div
+              class="info-description d-flex flex-column gap-2 align-items-start"
+            >
+              <div>Work Time</div>
+              <p>Monday-Friday: 9:00 - 22:00 Saturday-Sunday: 9:00 - 21:00</p>
+            </div>
+          </div>
+        </div>
+
+        <form>
+          <div class="form-group pb-4">
+            <label for="txtName"> Full Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="txtName"
+              aria-describedby="emailHelp"
+              placeholder="Full Name"
+            />
+            <small id="nameValidation" class="form-text text-danger d-none"
+              >invalid name</small
+            >
+          </div>
+
+          <div class="form-group pb-4">
+            <label for="txtEmail">Email</label>
+            <input
+              type="text"
+              class="form-control"
+              id="txtEmail"
+              placeholder="Email"
+            />
+            <small id="emailValidation" class="form-text text-danger d-none"
+              >invalid email</small
+            >
+          </div>
+
+          <div class="form-group pb-4">
+            <label for="txtPhone">Phone</label>
+            <input
+              type="text"
+              class="form-control"
+              id="txtPhone"
+              placeholder="Phone"
+            />
+            <small id="phoneValidation" class="form-text text-danger d-none"
+              >invalid phone</small
+            >
+          </div>
+
+          <div class="form-group pb-4">
+            <label for="txtPhone">Message</label>
+            <textarea id="txtMessage" class="form-control"></textarea>
+            <small id="emailHelp" class="form-text text-danger d-none"
+              >message can't be empty</small
+            >
+          </div>
+
+          <button type="submit" class="btn btn-light">Contact us</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- <section class="features py-5">
+      <div class="py-5"></div>
+      <div
+        class="container d-flex justify-content-center align-items-center flex-column gap-4 pb-5"
+      >
+        <div class="title text-center">Features</div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+          facilis deleniti. Nisi deserunt hic ea explicabo aliquam eius, iure
+          aspernatur reiciendis odio
+        </p>
+
+        <div class="features-box d-flex justify-content-between flex-wrap">
+          <div class="one-feeature">
+            <i class="fa-solid fa-truck"></i>
+            <div class="feature-text">
+              <label class="title">Free Delivery</label>
+              <label class="description"
+                >For all oders over $50, consectetur adipim scing elit.</label
+              >
+            </div>
+          </div>
+
+          <div class="one-feeature">
+            <i class="fa-solid fa-people-pulling"></i>
+            <div class="feature-text">
+              <label class="title">90 Days Return</label>
+              <label class="description"
+                >If goods have problems, consectetur adipim scing elit.</label
+              >
+            </div>
+          </div>
+
+          <div class="one-feeature">
+            <i class="fa-solid fa-money-bill-1-wave"></i>
+            <div class="feature-text">
+              <label class="title">Secure Payment</label>
+              <label class="description"
+                >100% secure payment, consectetur adipim scing elit.</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-5"></div>
+    </section> -->
+
+    <!-- <footer class="pt-5 mt-4">
+      <div class="links">
+        <div
+          class="container position-relative d-flex align-items-center gap-5 pb-3"
+        >
+          <div class="d-flex justify-content-center align-items-center">
+            400 University Drive Suite 200 Coral Gables, <br />FL 33134 USA
+          </div>
+          <div class="align-self-start">
+            <ul class="list-unstyled">
+              <li class="pt-3">Links</li>
+              <li class="pt-3">Home</li>
+              <li class="pt-3">Dashboard</li>
+              <li class="pt-3">About</li>
+              <li class="pt-3">Contact</li>
+            </ul>
+          </div>
+          <div class="align-self-start">
+            <ul class="list-unstyled">
+              <li class="pt-3">Help</li>
+              <li class="pt-3">Payment Options</li>
+              <li class="pt-3">Returns</li>
+              <li class="pt-3">Payment Options</li>
+            </ul>
+          </div>
+          <div class="align-self-start">
+            <ul class="list-unstyled">
+              <li class="pt-3">Newsletter</li>
+              <li class="pt-3">
+                <input type="text" placeholder="Enter your email address" />
+                <button class="btn custom-btn ms-2">SUBSCRIBE</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copy-right py-4 container">
+        &copy; 2023 Ahmed Hisham. All rights reverved
+      </div>
+    </footer> -->
+
+    <!-- <script src="./js/contact.js"></script> -->
+  </body>
+</html>

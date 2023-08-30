@@ -1,0 +1,100 @@
+@import "../abstract/functions";
+@import "../abstract/colors";
+@import "../components/button";
+@import "../components/goto-top";
+@import "../components/search-box";
+
+%navigationBar {
+  position: fixed;
+  width: 100%;
+  display: block;
+  z-index: 1;
+  background-color: $mainLightColor;
+  padding: spacer(2) 0;
+  .container {
+    button.humporgar {
+      display: none;
+      @extend %mainBtn;
+      span {
+        width: 25px;
+        height: 2px;
+        background-color: $mainLightColor;
+      }
+
+      @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        gap: spacer(1.5);
+      }
+    }
+
+    nav {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      gap: spacer(2);
+
+      #txtSearch {
+        @extend %searchBox;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0 spacer(3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: spacer(5);
+        list-style: none;
+
+        li {
+          position: relative;
+
+          &:hover {
+            div {
+              width: 100%;
+            }
+          }
+
+          div {
+            position: absolute;
+            height: 2px;
+            width: 0px;
+            bottom: 0;
+            background-color: $mainDarkcolor;
+            transition: 0.3s;
+          }
+
+          a {
+            text-decoration: none;
+            color: #000;
+
+            &.text-active {
+              color: $activeText;
+            }
+          }
+        }
+      }
+
+      &.opened{
+        height: 190px;
+      }
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: flex-start;
+        transition: 0.3s;
+        overflow-y: hidden;
+        height: 0;
+        ul{
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        > span {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import "../abstract/colors";
+@import "../abstract/functions";
+
+%gotoTop {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: spacer(5);
+  padding: spacer(3);
+  z-index: 1;
+  color: #fff;
+  background-color: $mainDarkcolor;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+%diplayNone {
+  display: none;
+}

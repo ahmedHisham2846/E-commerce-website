@@ -1,0 +1,254 @@
+[
+  {
+    "id": 1,
+    "name": "Plain console with teak mirror",
+    "category": "furneture",
+    "price": "10000.00",
+    "quantityInStore": 10
+  },
+  {
+    "id": 2,
+    "name": "Outdoor bar table and stool",
+    "category": "furneture",
+    "price": "11000.00",
+    "quantityInStore": 10
+  },
+  {
+    "id": 3,
+    "name": "Granite dining table with dining chair",
+    "category": "furneture",
+    "price": "12000.00",
+    "quantityInStore": 10
+  },
+  {
+    "id": 4,
+    "name": "Trenton modular sofa_3",
+    "category": "furneture",
+    "price": "13000.00",
+    "quantityInStore": 10
+  },
+  {
+    "id": 5,
+    "name": "Reclaimed teak coffee table",
+    "category": "furneture",
+    "price": "14000.00",
+    "quantityInStore": 10
+  },
+  {
+    "id": 6,
+    "name": "Plain console_",
+    "category": "furneture",
+    "price": "15000.00",
+    "quantityInStore": 10
+  },
+  {
+    "id": 7,
+    "name": "Grain coffee table",
+    "category": "furneture",
+    "price": "16000.00",
+    "quantityInStore": 10
+  },
+  {
+    "id": 8,
+    "name": "Kent coffee table",
+    "category": "furneture",
+    "price": "17000.00",
+    "quantityInStore": 10
+  },
+  {
+    "id": 9,
+    "name": "Round coffee table_color 2",
+    "category": "furneture",
+    "price": "18000.00",
+    "quantityInStore": 10
+  },
+  {
+    "id": 10,
+    "name": "Reclaimed teak Sideboard",
+    "category": "furneture",
+    "price": "19000.00",
+    "quantityInStore": 10
+  },
+  {
+    "id": 11,
+    "name": "black dress",
+    "category": "clothes",
+    "price": "20000.00",
+    "quantityInStore": 10
+  },
+  {
+    "id": 12,
+    "name": "shirt solid color",
+    "category": "clothes",
+    "price": "10100.00",
+    "quantityInStore": 10
+  },
+  {
+    "id": 13,
+    "name": "body t-shirt solid color",
+    "category": "clothes",
+    "price": "10200.00",
+    "quantityInStore": 10
+  },
+  {
+    "id": 14,
+    "name": "cut dress",
+    "category": "clothes",
+    "price": "22500.00",
+    "quantityInStore": 10
+  },
+  {
+    "id": 15,
+    "name": "pink blouse solid color",
+    "category": "clothes",
+    "price": "10550.00",
+    "quantityInStore": 10
+  },
+  {
+    "id": 16,
+    "name": "flower pattern dress",
+    "category": "clothes",
+    "price": "24520.00",
+    "quantityInStore": 10
+  },
+  {
+    "id": 17,
+    "name": "black sweatshirt with colors",
+    "category": "clothes",
+    "price": "15710.00",
+    "quantityInStore": 10
+  },
+  {
+    "id": 18,
+    "name": "t-shirt solid color",
+    "category": "clothes",
+    "price": "21930.00",
+    "quantityInStore": 10
+  },
+  {
+    "id": 19,
+    "name": "move dress solid color",
+    "category": "clothes",
+    "price": "24190.00",
+    "quantityInStore": 10
+  },
+  {
+    "id": 20,
+    "name": "pointed dress",
+    "category": "clothes",
+    "price": "23990.00",
+    "quantityInStore": 10
+  },
+  {
+    "id": 21,
+    "name": "asmsung mobile 3 cams",
+    "category": "mobiles",
+    "price": "39000.00",
+    "quantityInStore": 10
+  },
+  {
+    "id": 22,
+    "name": "asmsung mobile 3 cams orange",
+    "category": "mobiles",
+    "price": "39000.00",
+    "quantityInStore": 10
+  },
+  {
+    "id": 23,
+    "name": "asmsung galaxy A53 5G",
+    "category": "mobiles",
+    "price": "45920.00",
+    "quantityInStore": 10
+  },
+  {
+    "id": 24,
+    "name": "asmsung mobile 3 cams gray",
+    "category": "mobiles",
+    "price": "39000.00",
+    "quantityInStore": 10
+  },
+  {
+    "id": 25,
+    "name": "asmsung galaxy s22 iltra",
+    "category": "mobiles",
+    "price": "52750.00",
+    "quantityInStore": 10
+  },
+  {
+    "id": 26,
+    "name": "asmsung galaxy M33 5G",
+    "category": "mobiles",
+    "price": "41830.00",
+    "quantityInStore": 10
+  },
+  {
+    "id": 27,
+    "name": "asmsung mobile 3 cams dark gray",
+    "category": "mobiles",
+    "price": "39000.00",
+    "quantityInStore": 10
+  },
+  {
+    "id": 28,
+    "name": "realmr 9i",
+    "category": "mobiles",
+    "price": "37800.00",
+    "quantityInStore": 10
+  },
+  {
+    "id": 29,
+    "name": "oppo 2cams black",
+    "category": "mobiles",
+    "price": "38830.00",
+    "quantityInStore": 10
+  },
+  {
+    "id": 30,
+    "name": "oppo reno7 5g",
+    "category": "mobiles",
+    "price": "40680.00",
+    "quantityInStore": 10
+  },
+  {
+    "id": 31,
+    "name": "head phone red color",
+    "category": "electronic",
+    "price": "2000.00",
+    "quantityInStore": 10
+  },
+  {
+    "id": 32,
+    "name": "airpods white color",
+    "category": "electronic",
+    "price": "5000.00",
+    "quantityInStore": 10
+  },
+  {
+    "id": 33,
+    "name": "head phone ment green",
+    "category": "electronic",
+    "price": "1990.00",
+    "quantityInStore": 10
+  },
+  {
+    "id": 34,
+    "name": "mice",
+    "category": "electronic",
+    "price": "1100.00",
+    "quantityInStore": 10
+  },
+  {
+    "id": 35,
+    "name": "head phone with speaker",
+    "category": "electronic",
+    "price": "5000.00",
+    "quantityInStore": 10
+  },
+  {
+    "id": 36,
+    "name": "mouse solid white color",
+    "category": "electronic",
+    "price": "3830.00",
+    "quantityInStore": 10
+  }
+]

@@ -1,0 +1,254 @@
+@import "../base/normalize";
+@import "../abstract/variables";
+@import "../abstract/colors";
+@import "../abstract/functions";
+@import "../abstract/mixins";
+@import "../components/goto-top";
+@import "../components/button";
+@import "../layout/header";
+@import "../layout/footer";
+@import "../layout/features";
+@import "../components/label";
+.container {
+  @include container();
+}
+
+* {
+  @extend %normalize;
+}
+
+body {
+  font-family: $siteFontFamily;
+  > i {
+    @extend %gotoTop;
+
+    &.d-none {
+      @extend %diplayNone;
+    }
+  }
+}
+
+header {
+  @extend %headerDesign;
+}
+
+// Start discount section
+section.discount {
+  position: relative;
+
+  > div:first-child {
+    padding: spacer(4) 0;
+    margin: spacer(5) 0;
+    background-image: url(../../images/grayBackgound.jpg);
+    border-radius: 10px;
+
+    > div {
+      display: flex;
+      justify-content: space-around;
+      transition: 0.5s;
+
+      @media (max-width: 786px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: spacer(5);
+      }
+
+      .descount-details {
+        display: flex;
+        flex-direction: column;
+        gap: spacer(3);
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: 786px) {
+          order: 1;
+        }
+
+        span {
+          font-size: 218.7499923707%;
+          font-weight: 700;
+
+          &:nth-child(2) {
+            color: $blueColor;
+          }
+        }
+
+        button {
+          @extend %darkBtn;
+          font-size: $siteBigFontSize - 15;
+          font-weight: 500;
+        }
+      }
+
+      img {
+        width: 33.561%;
+        align-self: center;
+      }
+    }
+  }
+
+  .discount-pointers {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    gap: spacer(5);
+    justify-content: center;
+    padding: spacer(1) 0;
+    align-items: center;
+    bottom: -30px;
+
+    span {
+      background-color: $blueColor;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+}
+// End discount section
+
+// Start shop section
+section.shop {
+  padding-top: spacer(10);
+  padding-bottom: spacer(4);
+  .title {
+    @extend %titleText;
+    text-align: center;
+    padding-bottom: spacer(3);
+  }
+  .filter {
+    display: flex;
+    gap: spacer(5);
+    justify-content: center;
+    flex-wrap: wrap;
+    .category {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      cursor: pointer;
+      background-size: 70%;
+      background-repeat: no-repeat;
+      background-position: center;
+      border: solid 2px;
+      border-color: $mainDarkcolor;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: $mainLightColor;
+      }
+
+      &:first-child {
+        background-image: url(../../images/landingSlider/dress.png);
+      }
+
+      &:nth-child(2) {
+        background-image: url(../../images/landingSlider/Rocket.png);
+      }
+
+      &:nth-child(3) {
+        background-image: url(../../images/landingSlider/sperker.png);
+      }
+
+      &:last-child {
+        background-image: url(../../images/landingSlider/mobile.png);
+      }
+    }
+  }
+
+  .products {
+    background-color: $contaierGrayColor;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: spacer(3);
+    padding-top: spacer(5);
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+      justify-content: center;
+    }
+
+    .product-card {
+      width: calc(100% / 3);
+      min-width: 312px;
+      display: flex;
+      justify-content: center;
+      padding-bottom: spacer(5);
+      position: relative;
+      top: 0;
+      input[name="quantity"] {
+        height: 50px;
+        width: 50px;
+        border-radius: 0 0 50% 50%;
+        left: 10%;
+        border: none;
+        outline: none;
+        background-color: $mainDarkcolor;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+        position: absolute;
+        padding-left: spacer(2);
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: spacer(3);
+        justify-content: center;
+        align-items: center;
+        padding: spacer(2) 0;
+        padding-bottom: spacer(4);
+        width: 250px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 10px;
+        background-color: #fff;
+        transition: 0.3s;
+
+        &:hover {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5),
+            0 6px 20px 0 rgba(0, 0, 0, 0.25);
+        }
+
+        img {
+          width: 100%;
+          height: 170px;
+        }
+
+        span:first-child {
+          text-align: center;
+        }
+
+        button {
+          @extend %mainBtn;
+        }
+      }
+
+      span:nth-child(2) {
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      span:nth-child(3) {
+        font-size: 24px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+// End shop section
+
+// Start features section
+.features {
+  @extend %features
+}
+// End features section
+
+// Start footer
+footer {
+  @extend %footer;
+}
+// End footer
