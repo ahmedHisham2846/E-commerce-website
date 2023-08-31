@@ -8,108 +8,86 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="stylesheet" href="../scss/pages/dashboard.css" />
   </head>
   <body>
+    <i class="fa-solid fa-up-long d-none"></i>
     <header>
-      <div class="nav-bar position-fixed w-100">
-        <div
-          class="container d-flex justify-content-end gap-5 align-items-center"
-        >
-          <nav class="d-flex justify-content-center align-items-center">
-            <ul
-              class="m-0 pt-3 pb-3 d-flex justify-content-center align-items-center gap-5 list-unstyled"
-            >
-              <li class="position-relative">
-                <a href="./index.html" class="text-decoration-none text-black"
-                  >Home</a
-                >
+      <div class="nav-bar">
+        <div class="container">
+          <button class="humporgar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <nav>
+            <ul>
+              <li>
+                <a href="../../index.html" class="text-active">Home</a>
                 <div></div>
               </li>
-              <li class="position-relative">
-                <a href="#" class="text-decoration-none text-active"
-                  >Dashboard</a
-                >
+              <li>
+                <a href="./dashboard.html">Dashboard</a>
                 <div></div>
               </li>
-              <li class="position-relative">
-                <a href="./about.html" class="text-decoration-none text-black"
-                  >About</a
-                >
+              <li>
+                <a href="./about.html">About</a>
                 <div></div>
               </li>
-              <li class="position-relative">
-                <a href="./contact.html" class="text-decoration-none text-black"
-                  >Contact</a
-                >
+              <li>
+                <a href="./contact.html">Contact</a>
                 <div></div>
               </li>
             </ul>
           </nav>
-          <span class="nav-sepirator">|</span>
-          <input
-            type="text"
-            id="search-box"
-            placeholder="search"
-            class="mt-1 ps-2"
-          />
         </div>
       </div>
 
-      <div
-        class="px-3 landing d-flex justify-content-around align-items-center position-relative"
-      >
-        <div class="landing-title d-flex flex-column gap-3">
-          <span>Dashboard <span>Your Cart</span></span>
-          <span class="position-relative pb-2">Shop Now</span>
+      <div class="landing">
+        <div class="landing-title">
+          <span>E-Commerce Web Site</span>
+          <span>Shop Now</span>
         </div>
-
-        <img src="./images/dashboardLandingImage.png" />
+        <div class="landing-slider">
+          <div class="slider">
+            <img src="../images/dashboardLandingImage.png" />
+          </div>
+        </div>
       </div>
     </header>
 
-    <section class="cart py-5">
-      <div
-        class="container d-flex flex-column flex-lg-row flex-wrap justify-content-center justify-content-lg-between py-5"
-      >
-        <div
-          class="cart-products d-flex flex-column justify-content-center gap-3 p-4"
-        >
-          
+    <section class="cart">
+      <div class="container">
+        <div class="cart-products"></div>
 
-        </div>
-
-        <div class="cart-detals p-3 d-flex flex-column align-self-start p-5">
-          <div class="text-center mb-4">Cart Totals</div>
-          <div class="details text-center pb-3">
-            <div class="d-flex justify-content-center gap-4">
+        <div class="cart-detals">
+          <div>Cart Totals</div>
+          <div class="details">
+            <div>
               <div>subtotal</div>
               <div>Rs. 250,000.00</div>
             </div>
-            <div class="d-flex justify-content-between">
+            <div>
               <div>total</div>
               <div class="total">Rs. 250,000.00</div>
             </div>
-            <button class="btn custom-btn mt-4">Check Out</button>
+            <button>Check Out</button>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="features py-5">
-      <div class="py-5"></div>
-      <div
-        class="container d-flex justify-content-center align-items-center flex-column gap-4 pb-5"
-      >
-        <div class="title text-center">Features</div>
+    <section class="features">
+      <div></div>
+      <div class="container">
+        <div class="title">Features</div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
           facilis deleniti. Nisi deserunt hic ea explicabo aliquam eius, iure
           aspernatur reiciendis odio
         </p>
 
-        <div class="features-box d-flex justify-content-between flex-wrap">
+        <div class="features-box">
           <div class="one-feeature">
             <i class="fa-solid fa-truck"></i>
             <div class="feature-text">
@@ -141,50 +119,46 @@
           </div>
         </div>
       </div>
-      <div class="py-5"></div>
     </section>
 
-    <footer class="pt-5 mt-4">
+    <footer>
       <div class="links">
-        <div
-          class="container position-relative d-flex align-items-center gap-5 pb-3"
-        >
-          <div class="d-flex justify-content-center align-items-center">
+        <div class="container">
+          <div>
             400 University Drive Suite 200 Coral Gables, <br />FL 33134 USA
           </div>
-          <div class="align-self-start">
-            <ul class="list-unstyled">
-              <li class="pt-3">Links</li>
-              <li class="pt-3">Home</li>
-              <li class="pt-3">Dashboard</li>
-              <li class="pt-3">About</li>
-              <li class="pt-3">Contact</li>
+          <div>
+            <ul>
+              <li>Links</li>
+              <li>Home</li>
+              <li>Dashboard</li>
+              <li>About</li>
+              <li>Contact</li>
             </ul>
           </div>
-          <div class="align-self-start">
-            <ul class="list-unstyled">
-              <li class="pt-3">Help</li>
-              <li class="pt-3">Payment Options</li>
-              <li class="pt-3">Returns</li>
-              <li class="pt-3">Payment Options</li>
+          <div>
+            <ul>
+              <li>Help</li>
+              <li>Payment Options</li>
+              <li>Returns</li>
+              <li>Payment Options</li>
             </ul>
           </div>
-          <div class="align-self-start">
-            <ul class="list-unstyled">
-              <li class="pt-3">Newsletter</li>
-              <li class="pt-3">
+          <div>
+            <ul>
+              <li>Newsletter</li>
+              <li>
                 <input type="text" placeholder="Enter your email address" />
-                <button class="btn custom-btn ms-2">SUBSCRIBE</button>
+                <button>SUBSCRIBE</button>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="copy-right py-4 container">
-        &copy; 2023 Ahmed Hisham. All rights reverved
-      </div>
+      <div class="container">&copy; 2023 Ahmed Hisham. All rights reverved</div>
     </footer>
 
-    <script type="module" src="./js/cart.js"></script>
+    <script type="module" src="../js/frontend/gotoUpPage.js"></script>
+    <script type="module" src="../js/cart.js"></script>
   </body>
 </html>
