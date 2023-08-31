@@ -103,7 +103,7 @@
         </div>
 
         <form>
-          <div class="form-group pb-4">
+          <div>
             <label for="txtName"> Full Name</label>
             <input
               type="text"
@@ -112,12 +112,10 @@
               aria-describedby="emailHelp"
               placeholder="Full Name"
             />
-            <small id="nameValidation" class="form-text text-danger d-none"
-              >invalid name</small
-            >
+            <small id="nameValidation" class="d-none">invalid name</small>
           </div>
 
-          <div class="form-group pb-4">
+          <div>
             <label for="txtEmail">Email</label>
             <input
               type="text"
@@ -125,12 +123,10 @@
               id="txtEmail"
               placeholder="Email"
             />
-            <small id="emailValidation" class="form-text text-danger d-none"
-              >invalid email</small
-            >
+            <small id="emailValidation" class="d-none">invalid email</small>
           </div>
 
-          <div class="form-group pb-4">
+          <div>
             <label for="txtPhone">Phone</label>
             <input
               type="text"
@@ -138,44 +134,38 @@
               id="txtPhone"
               placeholder="Phone"
             />
-            <small id="phoneValidation" class="form-text text-danger d-none"
-              >invalid phone</small
-            >
+            <small id="phoneValidation" class="d-none">invalid phone</small>
           </div>
 
-          <div class="form-group pb-4">
+          <div>
             <label for="txtPhone">Message</label>
             <textarea id="txtMessage" class="form-control"></textarea>
-            <small id="emailHelp" class="form-text text-danger d-none"
-              >message can't be empty</small
-            >
+            <small id="emailHelp" class="d-none">message can't be empty</small>
           </div>
 
-          <button type="submit" class="btn btn-light">Contact us</button>
+          <button type="submit">Contact us</button>
         </form>
       </div>
     </section>
 
-    <!-- <section class="features py-5">
-      <div class="py-5"></div>
-      <div
-        class="container d-flex justify-content-center align-items-center flex-column gap-4 pb-5"
-      >
-        <div class="title text-center">Features</div>
+    <section class="features">
+      <div></div>
+      <div class="container">
+        <div class="title">Features</div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
           facilis deleniti. Nisi deserunt hic ea explicabo aliquam eius, iure
           aspernatur reiciendis odio
         </p>
 
-        <div class="features-box d-flex justify-content-between flex-wrap">
+        <div class="features-box">
           <div class="one-feeature">
             <i class="fa-solid fa-truck"></i>
             <div class="feature-text">
               <label class="title">Free Delivery</label>
-              <label class="description"
-                >For all oders over $50, consectetur adipim scing elit.</label
-              >
+              <label class="description">
+                For all oders over $50, consectetur adipim scing elit.
+              </label>
             </div>
           </div>
 
@@ -183,9 +173,9 @@
             <i class="fa-solid fa-people-pulling"></i>
             <div class="feature-text">
               <label class="title">90 Days Return</label>
-              <label class="description"
-                >If goods have problems, consectetur adipim scing elit.</label
-              >
+              <label class="description">
+                If goods have problems, consectetur adipim scing elit.
+              </label>
             </div>
           </div>
 
@@ -200,50 +190,46 @@
           </div>
         </div>
       </div>
-      <div class="py-5"></div>
-    </section> -->
+    </section>
 
-    <!-- <footer class="pt-5 mt-4">
+    <footer>
       <div class="links">
-        <div
-          class="container position-relative d-flex align-items-center gap-5 pb-3"
-        >
-          <div class="d-flex justify-content-center align-items-center">
+        <div class="container">
+          <div>
             400 University Drive Suite 200 Coral Gables, <br />FL 33134 USA
           </div>
-          <div class="align-self-start">
-            <ul class="list-unstyled">
-              <li class="pt-3">Links</li>
-              <li class="pt-3">Home</li>
-              <li class="pt-3">Dashboard</li>
-              <li class="pt-3">About</li>
-              <li class="pt-3">Contact</li>
+          <div>
+            <ul>
+              <li>Links</li>
+              <li>Home</li>
+              <li>Dashboard</li>
+              <li>About</li>
+              <li>Contact</li>
             </ul>
           </div>
-          <div class="align-self-start">
-            <ul class="list-unstyled">
-              <li class="pt-3">Help</li>
-              <li class="pt-3">Payment Options</li>
-              <li class="pt-3">Returns</li>
-              <li class="pt-3">Payment Options</li>
+          <div>
+            <ul>
+              <li>Help</li>
+              <li>Payment Options</li>
+              <li>Returns</li>
+              <li>Payment Options</li>
             </ul>
           </div>
-          <div class="align-self-start">
-            <ul class="list-unstyled">
-              <li class="pt-3">Newsletter</li>
-              <li class="pt-3">
+          <div>
+            <ul>
+              <li>Newsletter</li>
+              <li>
                 <input type="text" placeholder="Enter your email address" />
-                <button class="btn custom-btn ms-2">SUBSCRIBE</button>
+                <button>SUBSCRIBE</button>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="copy-right py-4 container">
-        &copy; 2023 Ahmed Hisham. All rights reverved
-      </div>
-    </footer> -->
+      <div class="container">&copy; 2023 Ahmed Hisham. All rights reverved</div>
+    </footer>
 
-    <!-- <script src="./js/contact.js"></script> -->
+    <script src="../js/frontend/contact.js"></script>
+    <script src="../js/frontend/gotoUpPage.js"></script>
   </body>
 </html>

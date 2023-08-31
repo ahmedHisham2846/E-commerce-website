@@ -67,20 +67,22 @@ header {
 
 .contact-box {
   padding: spacer(5) 0;
+  background-color: $mainLightColor;
   .container {
     padding: spacer(5) 0;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-evenly;
+    flex-direction: row;
     @media (max-width: 992px) {
-      justify-content: space-evenly;
-      flex-direction: row;
+      justify-content: center;
+      flex-direction: column;
     }
 
     .contact-info {
       display: flex;
       flex-direction: column;
       gap: spacer(5);
+      max-width: 393px;
 
       .info-card {
         display: flex;
@@ -89,6 +91,7 @@ header {
 
         i {
           padding-top: spacer(1);
+          font-size: 22px;
         }
 
         .info-description {
@@ -96,10 +99,67 @@ header {
           flex-direction: column;
           gap: spacer(2);
           align-items: flex-start;
-          div{}
-          p{}
+
+          div {
+            font-size: 24px;
+            font-weight: 500;
+          }
+
+          p {
+            font-size: 16px;
+            font-weight: 400;
+            width: 212px;
+          }
         }
       }
     }
+
+    form {
+      > div {
+        padding-bottom: spacer(4);
+        label {
+          display: block;
+          margin-bottom: spacer(1);
+        }
+        textarea,
+        input {
+          border-radius: 10px;
+          width: 30rem;
+          height: 50px;
+          padding: 0 spacer(1);
+          border: none;
+          outline: none;
+          transition: 0.3s;
+          &:focus {
+            box-shadow: 0 0 10px 5px $mainDarkcolor;
+          }
+        }
+        textarea {
+          height: 120px;
+        }
+
+        small {
+          color: $errorColor;
+          display: block;
+          margin-top: spacer(1);
+        }
+        small.d-none {
+          display: none;
+        }
+      }
+
+      button {
+        @extend %lightBtn;
+      }
+    }
   }
+}
+
+.features {
+  margin-top: 0;
+  @extend %features;
+}
+
+footer {
+  @extend %footer;
 }
