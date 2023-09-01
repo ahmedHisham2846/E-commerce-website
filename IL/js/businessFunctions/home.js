@@ -31,13 +31,29 @@ function showProducts(products) {
 import { storeCartProductInLocalStorage } from "../../../BL/repositories/productCartRepository.js";
 import { CartProduct } from "../../../BL/entities/cartProduct.js";
 
+function showNotification(count, productName) {
+  let notification = document.querySelector("body > div:first-of-type");
+  console.log(notification);
+  notification.innerHTML = `You have bought ${count} pices of ${productName}`;
+  notification.classList.add("open");
+
+  setTimeout(() => {
+    notification.classList.remove("open");
+  }, 4000);
+}
+
 function addProductToCart(e) {
   let productID =
     e.target.parentElement.querySelector('input[name="id"]').value;
-  let count = e.target.parentElement.parentElement.querySelector(
+  var countInput = e.target.parentElement.parentElement.querySelector(
     'input[name="quantity"]'
-  ).value;
+  );
+  let count = countInput.value;
   storeCartProductInLocalStorage(new CartProduct(productID, count));
+  let productName =
+    e.target.parentElement.querySelector("span:first-of-type").innerHTML;
+
+  showNotification(count, productName);
 }
 
 function setClicEventOnButton() {

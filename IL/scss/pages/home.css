@@ -462,6 +462,22 @@ section.shop .title, .features div.container .title {
 body {
   font-family: Poppins;
 }
+body > div:first-of-type {
+  background-color: #fbebb5;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 10px;
+  position: fixed;
+  top: 90px;
+  transition: 0.3s;
+  z-index: 1;
+  width: 50%;
+  left: -50%;
+}
+body > div:first-of-type.open {
+  left: 50%;
+  transform: translateX(-50%);
+}
 section.discount {
   position: relative;
 }

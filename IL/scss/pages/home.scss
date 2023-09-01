@@ -19,6 +19,23 @@
 
 body {
   font-family: $siteFontFamily;
+  > div:first-of-type {
+    background-color: $mainLightColor;
+    text-align: center;
+    padding: spacer(4);
+    border-radius: 10px;
+    position: fixed;
+    top: 90px;
+    transition: 0.3s;
+    z-index: 1;
+    width: 50%;
+    left: -50%;
+    
+    &.open{
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
   > i {
     @extend %gotoTop;
 
@@ -243,7 +260,7 @@ section.shop {
 
 // Start features section
 .features {
-  @extend %features
+  @extend %features;
 }
 // End features section
 
