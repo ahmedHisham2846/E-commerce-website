@@ -6,7 +6,7 @@ function showSubtotal(element) {
 }
 
 /*---------------------------------------------------------------- */
-import { retriveAllCartProducts } from "../../BL/repositories/productCartRepository.js";
+import { retriveAllCartProducts } from "../../../BL/repositories/productCartRepository.js";
 
 function loadCartProducts() {
   let cartProducts = retriveAllCartProducts();
@@ -38,7 +38,7 @@ function showCartProducts(cartProducts) {
   });
 }
 
-import { removeCartProductFromLocalStorage } from "../../BL/repositories/productCartRepository.js";
+import { removeCartProductFromLocalStorage } from "../../../BL/repositories/productCartRepository.js";
 
 function setDelletEvent() {
   document.querySelectorAll(".cart .cart-products .product i").forEach((e) => {
