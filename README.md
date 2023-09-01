@@ -7,10 +7,13 @@ This is a small prototype for an e-commerce website front-end. It was a final pr
 
 - [x] Home page: which contains discounts and offers section, and the main section of project (Shop section).
 <img src="./screens/Home.png">
+
 - [x] Dashboard page: which contains the cart section inclouds the products that the client added from the shop.
 <img src="./screens/Cart.png">
+
 - [x] Contact page: which contains form with full validation using native JS.
 <img src="./screens/Contact.png">
+
 - [x] About page.
 <img src="./screens/About.png">
 
