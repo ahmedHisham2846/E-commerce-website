@@ -70,6 +70,12 @@ header {
         border-radius: 10px;
         cursor: pointer;
         transition: 0.3s;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        gap: spacer(5);
+        align-items: center;
+        padding: spacer(3);
 
         &:hover {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
@@ -95,6 +101,7 @@ header {
           cursor: pointer;
           transition: 0.3s;
           border-radius: 5px;
+          padding: spacer(3);
 
           &:hover {
             color: #fff;
@@ -105,6 +112,7 @@ header {
         .quantity {
           border-radius: 5px;
           border: solid #9f9f9f 1px;
+          padding: spacer(1) spacer(2);
         }
       }
     }
@@ -138,7 +146,7 @@ header {
           font-size: 16px;
           font-weight: 400;
 
-          &.total{
+          &.total {
             color: $mainDarkcolor;
             font-weight: 600;
           }

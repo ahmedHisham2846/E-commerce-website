@@ -15,7 +15,7 @@ function showProducts(products) {
       <div
       class="d-flex flex-column gap-3 justify-content-center align-items-center px-2 pb-4"
       >
-        <img src="${p.imagePath}" />
+        <img src="./IL/${p.imagePath}" />
         <span class="text-center">${p.name}</span>
         <span>Rs. ${p.price}</span>
         <input type="hidden" name="category" value="${p.category}">

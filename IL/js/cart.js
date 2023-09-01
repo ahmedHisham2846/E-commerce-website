@@ -23,14 +23,14 @@ function showCartProducts(cartProducts) {
     totalAmmount += subtotal;
 
     cartProductsContainer.innerHTML += `
-    <div class="product bg-white d-flex justify-content-center gap-5 align-items-center p-3">
-    <img src="${product.imagePath}" />
-    <div>${product.name}</div>
-    <div>Rs. ${product.price}</div>
-    <div class="quantity py-1 px-2">${cp.quantity}</div>
-    <div id="subtotal">Rs. ${subtotal}</div>
-    <i class="fa-solid fa-trash-can p-3"></i>
-    <input type="hidden" name="id" value="${cp.productID}">
+    <div class="product">
+      <img src="../${product.imagePath}" />
+      <div>${product.name}</div>
+      <div>Rs. ${product.price}</div>
+      <div class="quantity">${cp.quantity}</div>
+      <div id="subtotal">Rs. ${subtotal}</div>
+      <i class="fa-solid fa-trash-can"></i>
+      <input type="hidden" name="id" value="${cp.productID}">
     </div>
     `;
     displayTotalAmmount(totalAmmount);

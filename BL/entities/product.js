@@ -6,7 +6,7 @@ export class Product {
     this.price = price;
     this.category = category;
     this.id = id;
-    this.imagePath = `./IL/images/products/${id}.png`;
+    this.imagePath = `images/products/${id}.png`;
     this.productKeyInLocalStorage = `product_${id}`;
   }
   getQuantityInStore() {
