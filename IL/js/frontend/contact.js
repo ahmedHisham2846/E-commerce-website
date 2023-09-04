@@ -3,8 +3,8 @@
 function isNameValid() {
   let val = document.getElementById("txtName").value;
   if (!val) return false;
-  if (val.length < 3) return false;
-  return true;
+  var nameRegx =  /\d/;
+  return !nameRegx.test(val);
 }
 
 function isEmailValid() {
