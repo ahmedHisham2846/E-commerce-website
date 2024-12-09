@@ -1,24 +1,24 @@
-@mixin container(){
+@mixin container() {
     display: block;
-  margin: 0;
+    margin: 0;
 
-  @media (min-width: 576px) {
-    margin: 0 calc((100% - 540px) / 2);
-  }
+    @media (min-width: 576px) {
+        margin: 0 calc((100% - 540px) / 2);
+    }
 
-  @media (min-width: 768px) {
-    margin: 0 calc((100% - 720px) / 2);
-  }
+    @media (min-width: 768px) {
+        margin: 0 calc((100% - 720px) / 2);
+    }
 
-  @media (min-width: 992px) {
-    margin: 0 calc((100% - 960px) / 2);
-  }
+    @media (min-width: 992px) {
+        margin: 0 calc((100% - 960px) / 2);
+    }
 
-  @media (min-width: 1200px) {
-    margin: 0 calc((100% - 1140px) / 2);
-  }
+    @media (min-width: 1200px) {
+        margin: 0 calc((100% - 1140px) / 2);
+    }
 
-  @media (min-width: 1400px) {
-    margin: 0 calc((100% - 1320px) / 2);
-  }
+    @media (min-width: 1400px) {
+        margin: 0 calc((100% - 1320px) / 2);
+    }
 }

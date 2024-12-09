@@ -1,4 +1,3 @@
-
 @function spacer($level) {
-  @return #{$level / 4}rem;
+    @return #{$level / 4}rem;
 }

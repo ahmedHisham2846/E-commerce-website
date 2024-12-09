@@ -11,125 +11,139 @@
 @import "../components/label";
 
 .container {
-  @include container();
+    @include container();
 }
 
 * {
-  @extend %normalize;
+    @extend %normalize;
 }
 
 body {
-  font-family: $siteFontFamily;
-  > i {
-    @extend %gotoTop;
+    font-family: $siteFontFamily;
 
-    &.d-none {
-      @extend %diplayNone;
+    >i {
+        @extend %gotoTop;
+
+        &.d-none {
+            @extend %diplayNone;
+        }
     }
-  }
 }
 
 header {
-  @extend %headerDesign;
-  .nav-bar {
-    height: 55px;
+    @extend %headerDesign;
 
-    display: flex;
-    align-items: center;
-    justify-content: end;
-  }
+    .nav-bar {
+        height: 55px;
+
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
 }
 
 .our-story {
-  padding: spacer(5) 0;
-  > .container {
     padding: spacer(5) 0;
-    .title {
-      @extend %titleText;
-      text-align: center;
-    }
-    p {
-      padding: spacer(3) 0;
-      color: $textGrayColor;
-      font-size: 24px;
-      font-weight: 400;
-      line-height: 36px;
-    }
-    > div:last-child {
-      display: flex;
-      flex-wrap: wrap;
-      padding-top: spacer(4);
-      justify-content: space-around;
-      img {
-        width: 45%;
-        min-width: 313px;
-        border-radius: 5px;
-      }
 
-      @media (max-width: 992px) {
-        justify-content: space-between;
-      }
-      @media (max-width: 768px) {
-        justify-content: center;
-        gap: spacer(5);
-      }
-    }
-  }
-}
+    >.container {
+        padding: spacer(5) 0;
 
-.testimonials {
-  padding: spacer(5) 0;
-  background-color: $contaierGrayColor;
-  > .container {
-    padding: spacer(5) 0;
-    .title {
-      @extend %titleText;
-      text-align: center;
-    }
-
-    .testimonials-box {
-      display: flex;
-      flex-direction: column;
-      gap: spacer(5);
-      padding: spacer(5) 0;
-      .testimonial-card {
-        display: flex;
-        gap: spacer(3);
-        align-items: center;
-        img {
-          min-width: 210px;
-          height: 210px;
-          border-radius: 50%;
+        .title {
+            @extend %titleText;
+            text-align: center;
         }
-        .testimonial-text {
-          display: flex;
-          flex-direction: column;
-          gap: spacer(3);
-          .quote {
-          }
-          p {
-            padding-top: spacer(4);
+
+        p {
+            padding: spacer(3) 0;
+            color: $textGrayColor;
             font-size: 24px;
             font-weight: 400;
             line-height: 36px;
-            color: $textGrayColor;
-          }
-
-          div:last-child {
-            color: #1d1d1d;
-            font-size: 21px;
-            font-weight: 700;
-          }
         }
-      }
+
+        >div:last-child {
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: spacer(4);
+            justify-content: space-around;
+
+            img {
+                width: 45%;
+                min-width: 313px;
+                border-radius: 5px;
+            }
+
+            @media (max-width: 992px) {
+                justify-content: space-between;
+            }
+
+            @media (max-width: 768px) {
+                justify-content: center;
+                gap: spacer(5);
+            }
+        }
     }
-  }
+}
+
+.testimonials {
+    padding: spacer(5) 0;
+    background-color: $contaierGrayColor;
+
+    >.container {
+        padding: spacer(5) 0;
+
+        .title {
+            @extend %titleText;
+            text-align: center;
+        }
+
+        .testimonials-box {
+            display: flex;
+            flex-direction: column;
+            gap: spacer(5);
+            padding: spacer(5) 0;
+
+            .testimonial-card {
+                display: flex;
+                gap: spacer(3);
+                align-items: center;
+
+                img {
+                    min-width: 210px;
+                    height: 210px;
+                    border-radius: 50%;
+                }
+
+                .testimonial-text {
+                    display: flex;
+                    flex-direction: column;
+                    gap: spacer(3);
+
+                    .quote {}
+
+                    p {
+                        padding-top: spacer(4);
+                        font-size: 24px;
+                        font-weight: 400;
+                        line-height: 36px;
+                        color: $textGrayColor;
+                    }
+
+                    div:last-child {
+                        color: #1d1d1d;
+                        font-size: 21px;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .features {
-  @extend %features;
+    @extend %features;
 }
 
 footer {
-  @extend %footer;
+    @extend %footer;
 }

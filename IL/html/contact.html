@@ -1,234 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <link rel="stylesheet" href="../scss/pages/contact.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <i class="fa-solid fa-up-long d-none"></i>
     <header>
-      <div class="nav-bar">
-        <div class="container">
-          <button class="humporgar">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-          <nav>
-            <ul>
-              <li>
-                <a href="../../index.html">Home</a>
-                <div></div>
-              </li>
-              <li>
-                <a href="./dashboard.html">Dashboard</a>
-                <div></div>
-              </li>
-              <li>
-                <a href="./about.html">About</a>
-                <div></div>
-              </li>
-              <li>
-                <a href="#" class="text-active">Contact</a>
-                <div></div>
-              </li>
-            </ul>
-          </nav>
+        <div class="nav-bar">
+            <div class="container">
+                <button class="humporgar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="../../index.html">Home</a>
+                            <div></div>
+                        </li>
+                        <li>
+                            <a href="./dashboard.html">Dashboard</a>
+                            <div></div>
+                        </li>
+                        <li>
+                            <a href="./about.html">About</a>
+                            <div></div>
+                        </li>
+                        <li>
+                            <a href="#" class="text-active">Contact</a>
+                            <div></div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-      </div>
 
-      <div class="landing">
-        <div class="landing-title">
-          <span>E-Commerce Web Site</span>
-          <span>Shop Now</span>
+        <div class="landing">
+            <div class="landing-title">
+                <span>E-Commerce Web Site</span>
+                <span>Shop Now</span>
+            </div>
+            <div class="landing-slider">
+                <div class="slider">
+                    <img src="../images/contactLandingImage.png" />
+                </div>
+            </div>
         </div>
-        <div class="landing-slider">
-          <div class="slider">
-            <img src="../images/contactLandingImage.png" />
-          </div>
-        </div>
-      </div>
     </header>
 
     <section class="intro">
-      <div class="container">
-        <div class="intro-text">
-          <div>Get In Touch With Us</div>
-          <p>
-            For More Information About Our Product & Services. Please Feel Free
-            To Drop Us An Email. Our Staff Always Be There To Help You Out. Do
-            Not Hesitate!
-          </p>
+        <div class="container">
+            <div class="intro-text">
+                <div>Get In Touch With Us</div>
+                <p>
+                    For More Information About Our Product & Services. Please Feel Free
+                    To Drop Us An Email. Our Staff Always Be There To Help You Out. Do
+                    Not Hesitate!
+                </p>
+            </div>
         </div>
-      </div>
     </section>
 
     <section class="contact-box">
-      <div class="container">
-        <div class="contact-info">
-          <div class="info-card">
-            <i class="fa-solid fa-location-dot"></i>
-            <div class="info-description">
-              <div>Address</div>
-              <p>236 5th SE Avenue, New York NY10000, United States</p>
-            </div>
-          </div>
+        <div class="container">
+            <div class="contact-info">
+                <div class="info-card">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="info-description">
+                        <div>Address</div>
+                        <p>236 5th SE Avenue, New York NY10000, United States</p>
+                    </div>
+                </div>
 
-          <div class="info-card d-flex gap-3 align-items-start">
-            <i class="pt-1 fa-solid fa-phone"></i>
-            <div
-              class="info-description d-flex flex-column gap-2 align-items-start"
-            >
-              <div>Phone</div>
-              <p>Mobile: +(84) 546-6789 Hotline: +(84) 456-6789</p>
-            </div>
-          </div>
+                <div class="info-card d-flex gap-3 align-items-start">
+                    <i class="pt-1 fa-solid fa-phone"></i>
+                    <div class="info-description d-flex flex-column gap-2 align-items-start">
+                        <div>Phone</div>
+                        <p>Mobile: +(84) 546-6789 Hotline: +(84) 456-6789</p>
+                    </div>
+                </div>
 
-          <div class="info-card d-flex gap-3 align-items-start">
-            <i class="pt-1 fa-solid fa-clock"></i>
-            <div
-              class="info-description d-flex flex-column gap-2 align-items-start"
-            >
-              <div>Work Time</div>
-              <p>Monday-Friday: 9:00 - 22:00 Saturday-Sunday: 9:00 - 21:00</p>
+                <div class="info-card d-flex gap-3 align-items-start">
+                    <i class="pt-1 fa-solid fa-clock"></i>
+                    <div class="info-description d-flex flex-column gap-2 align-items-start">
+                        <div>Work Time</div>
+                        <p>Monday-Friday: 9:00 - 22:00 Saturday-Sunday: 9:00 - 21:00</p>
+                    </div>
+                </div>
             </div>
-          </div>
+
+            <form>
+                <div>
+                    <label for="txtName"> Full Name</label>
+                    <input type="text" class="form-control" id="txtName" aria-describedby="emailHelp"
+                        placeholder="Full Name" />
+                    <small id="nameValidation" class="d-none">invalid name</small>
+                </div>
+
+                <div>
+                    <label for="txtEmail">Email</label>
+                    <input type="text" class="form-control" id="txtEmail" placeholder="Email" />
+                    <small id="emailValidation" class="d-none">invalid email</small>
+                </div>
+
+                <div>
+                    <label for="txtPhone">Phone</label>
+                    <input type="text" class="form-control" id="txtPhone" placeholder="Phone" />
+                    <small id="phoneValidation" class="d-none">invalid phone</small>
+                </div>
+
+                <div>
+                    <label for="txtPhone">Message</label>
+                    <textarea id="txtMessage" class="form-control"></textarea>
+                    <small id="emailHelp" class="d-none">message can't be empty</small>
+                </div>
+
+                <button type="submit">Contact us</button>
+            </form>
         </div>
-
-        <form>
-          <div>
-            <label for="txtName"> Full Name</label>
-            <input
-              type="text"
-              class="form-control"
-              id="txtName"
-              aria-describedby="emailHelp"
-              placeholder="Full Name"
-            />
-            <small id="nameValidation" class="d-none">invalid name</small>
-          </div>
-
-          <div>
-            <label for="txtEmail">Email</label>
-            <input
-              type="text"
-              class="form-control"
-              id="txtEmail"
-              placeholder="Email"
-            />
-            <small id="emailValidation" class="d-none">invalid email</small>
-          </div>
-
-          <div>
-            <label for="txtPhone">Phone</label>
-            <input
-              type="text"
-              class="form-control"
-              id="txtPhone"
-              placeholder="Phone"
-            />
-            <small id="phoneValidation" class="d-none">invalid phone</small>
-          </div>
-
-          <div>
-            <label for="txtPhone">Message</label>
-            <textarea id="txtMessage" class="form-control"></textarea>
-            <small id="emailHelp" class="d-none">message can't be empty</small>
-          </div>
-
-          <button type="submit">Contact us</button>
-        </form>
-      </div>
     </section>
 
     <section class="features">
-      <div></div>
-      <div class="container">
-        <div class="title">Features</div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
-          facilis deleniti. Nisi deserunt hic ea explicabo aliquam eius, iure
-          aspernatur reiciendis odio
-        </p>
+        <div></div>
+        <div class="container">
+            <div class="title">Features</div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+                facilis deleniti. Nisi deserunt hic ea explicabo aliquam eius, iure
+                aspernatur reiciendis odio
+            </p>
 
-        <div class="features-box">
-          <div class="one-feeature">
-            <i class="fa-solid fa-truck"></i>
-            <div class="feature-text">
-              <label class="title">Free Delivery</label>
-              <label class="description">
-                For all oders over $50, consectetur adipim scing elit.
-              </label>
-            </div>
-          </div>
+            <div class="features-box">
+                <div class="one-feeature">
+                    <i class="fa-solid fa-truck"></i>
+                    <div class="feature-text">
+                        <label class="title">Free Delivery</label>
+                        <label class="description">
+                            For all oders over $50, consectetur adipim scing elit.
+                        </label>
+                    </div>
+                </div>
 
-          <div class="one-feeature">
-            <i class="fa-solid fa-people-pulling"></i>
-            <div class="feature-text">
-              <label class="title">90 Days Return</label>
-              <label class="description">
-                If goods have problems, consectetur adipim scing elit.
-              </label>
-            </div>
-          </div>
+                <div class="one-feeature">
+                    <i class="fa-solid fa-people-pulling"></i>
+                    <div class="feature-text">
+                        <label class="title">90 Days Return</label>
+                        <label class="description">
+                            If goods have problems, consectetur adipim scing elit.
+                        </label>
+                    </div>
+                </div>
 
-          <div class="one-feeature">
-            <i class="fa-solid fa-money-bill-1-wave"></i>
-            <div class="feature-text">
-              <label class="title">Secure Payment</label>
-              <label class="description"
-                >100% secure payment, consectetur adipim scing elit.</label
-              >
+                <div class="one-feeature">
+                    <i class="fa-solid fa-money-bill-1-wave"></i>
+                    <div class="feature-text">
+                        <label class="title">Secure Payment</label>
+                        <label class="description">100% secure payment, consectetur adipim scing elit.</label>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <footer>
-      <div class="links">
-        <div class="container">
-          <div>
-            400 University Drive Suite 200 Coral Gables, <br />FL 33134 USA
-          </div>
-          <div>
-            <ul>
-              <li>Links</li>
-              <li>Home</li>
-              <li>Dashboard</li>
-              <li>About</li>
-              <li>Contact</li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li>Help</li>
-              <li>Payment Options</li>
-              <li>Returns</li>
-              <li>Payment Options</li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li>Newsletter</li>
-              <li>
-                <input type="text" placeholder="Enter your email address" />
-                <button>SUBSCRIBE</button>
-              </li>
-            </ul>
-          </div>
+        <div class="links">
+            <div class="container">
+                <div>
+                    400 University Drive Suite 200 Coral Gables, <br />FL 33134 USA
+                </div>
+                <div>
+                    <ul>
+                        <li>Links</li>
+                        <li>Home</li>
+                        <li>Dashboard</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Help</li>
+                        <li>Payment Options</li>
+                        <li>Returns</li>
+                        <li>Payment Options</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Newsletter</li>
+                        <li>
+                            <input type="text" placeholder="Enter your email address" />
+                            <button>SUBSCRIBE</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="container">&copy; 2023 Ahmed Hisham. All rights reverved</div>
+        <div class="container">&copy; 2023 Ahmed Hisham. All rights reverved</div>
     </footer>
 
     <script src="../js/frontend/contact.js"></script>
     <script src="../js/frontend/gotoUpPage.js"></script>
-  </body>
+</body>
+
 </html>

@@ -11,155 +11,168 @@
 @import "../components/label";
 
 .container {
-  @include container();
+    @include container();
 }
 
 * {
-  @extend %normalize;
+    @extend %normalize;
 }
 
 body {
-  font-family: $siteFontFamily;
-  > i {
-    @extend %gotoTop;
+    font-family: $siteFontFamily;
 
-    &.d-none {
-      @extend %diplayNone;
+    >i {
+        @extend %gotoTop;
+
+        &.d-none {
+            @extend %diplayNone;
+        }
     }
-  }
 }
 
 header {
-  @extend %headerDesign;
-  .nav-bar {
-    height: 55px;
+    @extend %headerDesign;
 
-    display: flex;
-    align-items: center;
-    justify-content: end;
-  }
+    .nav-bar {
+        height: 55px;
+
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
 }
 
 .intro {
-  padding: spacer(5) 0;
-  .container {
     padding: spacer(5) 0;
-    .intro-text {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      gap: spacer(3);
-      div {
-        font-size: $siteBigFontSize;
-        font-weight: 600;
-      }
-      p {
-        color: $textGrayColor;
-        text-align: center;
-        font-size: 16px;
-        font-weight: 400;
-        width: 644px;
-      }
+
+    .container {
+        padding: spacer(5) 0;
+
+        .intro-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: spacer(3);
+
+            div {
+                font-size: $siteBigFontSize;
+                font-weight: 600;
+            }
+
+            p {
+                color: $textGrayColor;
+                text-align: center;
+                font-size: 16px;
+                font-weight: 400;
+                width: 644px;
+            }
+        }
     }
-  }
 }
 
 .contact-box {
-  padding: spacer(5) 0;
-  background-color: $mainLightColor;
-  .container {
     padding: spacer(5) 0;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    @media (max-width: 992px) {
-      justify-content: center;
-      flex-direction: column;
-    }
+    background-color: $mainLightColor;
 
-    .contact-info {
-      display: flex;
-      flex-direction: column;
-      gap: spacer(5);
-      max-width: 393px;
-
-      .info-card {
+    .container {
+        padding: spacer(5) 0;
         display: flex;
-        gap: spacer(3);
-        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-direction: row;
 
-        i {
-          padding-top: spacer(1);
-          font-size: 22px;
+        @media (max-width: 992px) {
+            justify-content: center;
+            flex-direction: column;
         }
 
-        .info-description {
-          display: flex;
-          flex-direction: column;
-          gap: spacer(2);
-          align-items: flex-start;
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: spacer(5);
+            max-width: 393px;
 
-          div {
-            font-size: 24px;
-            font-weight: 500;
-          }
+            .info-card {
+                display: flex;
+                gap: spacer(3);
+                align-items: flex-start;
 
-          p {
-            font-size: 16px;
-            font-weight: 400;
-            width: 212px;
-          }
+                i {
+                    padding-top: spacer(1);
+                    font-size: 22px;
+                }
+
+                .info-description {
+                    display: flex;
+                    flex-direction: column;
+                    gap: spacer(2);
+                    align-items: flex-start;
+
+                    div {
+                        font-size: 24px;
+                        font-weight: 500;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        font-weight: 400;
+                        width: 212px;
+                    }
+                }
+            }
         }
-      }
+
+        form {
+            >div {
+                padding-bottom: spacer(4);
+
+                label {
+                    display: block;
+                    margin-bottom: spacer(1);
+                }
+
+                textarea,
+                input {
+                    border-radius: 10px;
+                    width: 30rem;
+                    height: 50px;
+                    padding: 0 spacer(1);
+                    border: none;
+                    outline: none;
+                    transition: 0.3s;
+
+                    &:focus {
+                        box-shadow: 0 0 10px 5px $mainDarkcolor;
+                    }
+                }
+
+                textarea {
+                    height: 120px;
+                }
+
+                small {
+                    color: $errorColor;
+                    display: block;
+                    margin-top: spacer(1);
+                }
+
+                small.d-none {
+                    display: none;
+                }
+            }
+
+            button {
+                @extend %lightBtn;
+            }
+        }
     }
-
-    form {
-      > div {
-        padding-bottom: spacer(4);
-        label {
-          display: block;
-          margin-bottom: spacer(1);
-        }
-        textarea,
-        input {
-          border-radius: 10px;
-          width: 30rem;
-          height: 50px;
-          padding: 0 spacer(1);
-          border: none;
-          outline: none;
-          transition: 0.3s;
-          &:focus {
-            box-shadow: 0 0 10px 5px $mainDarkcolor;
-          }
-        }
-        textarea {
-          height: 120px;
-        }
-
-        small {
-          color: $errorColor;
-          display: block;
-          margin-top: spacer(1);
-        }
-        small.d-none {
-          display: none;
-        }
-      }
-
-      button {
-        @extend %lightBtn;
-      }
-    }
-  }
 }
 
 .features {
-  margin-top: 0;
-  @extend %features;
+    margin-top: 0;
+    @extend %features;
 }
 
 footer {
-  @extend %footer;
+    @extend %footer;
 }

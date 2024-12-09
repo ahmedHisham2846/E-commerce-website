@@ -1,38 +1,38 @@
 document.getElementsByTagName("body")[0].onscroll = () => {
-  if (window.scrollY >= 250) {
-    document.querySelector("body>i").classList.remove("d-none");
-  } else {
-    document.querySelector("body>i").classList.add("d-none");
-  }
+    if (window.scrollY >= 250) {
+        document.querySelector("body>i").classList.remove("d-none");
+    } else {
+        document.querySelector("body>i").classList.add("d-none");
+    }
 };
 
 document.querySelector("body>i").onclick = () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "smooth" });
 };
 
 function slideLandingImage() {
-  let landingImage = document.querySelector(
-    "header .landing .landing-slider .slider img"
-  );
+    let landingImage = document.querySelector(
+        "header .landing .landing-slider .slider img"
+    );
 
-  let images = [
-    "./IL/images/landingSlider/Rocket.png",
-    "./IL/images/landingSlider/mobile.png",
-    "./IL/images/landingSlider/dress.png",
-    "./IL/images/landingSlider/sperker.png",
-  ];
-  let imageIndex = 0;
-  setInterval(() => {
-    if (imageIndex == images.length) imageIndex = 0;
-    landingImage.style.opacity = "0";
+    let images = [
+        "./IL/images/landingSlider/Rocket.png",
+        "./IL/images/landingSlider/mobile.png",
+        "./IL/images/landingSlider/dress.png",
+        "./IL/images/landingSlider/sperker.png",
+    ];
+    let imageIndex = 0;
+    setInterval(() => {
+        if (imageIndex == images.length) imageIndex = 0;
+        landingImage.style.opacity = "0";
 
-    setTimeout(() => {
-      landingImage.src = images[imageIndex++];
-      setTimeout(() => {
-        landingImage.style.opacity = "1";
-      }, 200);
-    }, 500);
-  }, 3000);
+        setTimeout(() => {
+            landingImage.src = images[imageIndex++];
+            setTimeout(() => {
+                landingImage.style.opacity = "1";
+            }, 200);
+        }, 500);
+    }, 3000);
 }
 
 /*
@@ -49,102 +49,102 @@ function slideLandingImage() {
 // Hint: this discounts are static but if in other setuation it will be a stored data come from API
 
 let discounts = [
-  {
-    id: 1,
-    brand: "H & M",
-    type: "DRESS",
-    offer: "UP TO 25% OFF",
-    imagePath: "./IL/images/landingSlider/dress.png",
-  },
-  {
-    id: 2,
-    brand: "LAVA",
-    type: "SPEAKER",
-    offer: "UP TO 25% OFF",
-    imagePath: "./IL/images/landingSlider/sperker.png",
-  },
-  {
-    id: 3,
-    brand: "SAMSUNG",
-    type: "MOBILE",
-    offer: "UP TO 25% OFF",
-    imagePath: "./IL/images/landingSlider/mobile.png",
-  },
+    {
+        id: 1,
+        brand: "H & M",
+        type: "DRESS",
+        offer: "UP TO 25% OFF",
+        imagePath: "./IL/images/landingSlider/dress.png",
+    },
+    {
+        id: 2,
+        brand: "LAVA",
+        type: "SPEAKER",
+        offer: "UP TO 25% OFF",
+        imagePath: "./IL/images/landingSlider/sperker.png",
+    },
+    {
+        id: 3,
+        brand: "SAMSUNG",
+        type: "MOBILE",
+        offer: "UP TO 25% OFF",
+        imagePath: "./IL/images/landingSlider/mobile.png",
+    },
 ];
 
 let discountIndex = 0;
 function getNextDiscountElements(id) {
-  let discountDetails = document.createElement("div");
-  discountDetails.classList.add(
-    "descount-details",
-    "d-flex",
-    "flex-column",
-    "gap-3",
-    "justify-content-center",
-    "align-self-center"
-  );
-  discountDetails.innerHTML = `<span>${discounts[id].brand}</span>`;
-  discountDetails.innerHTML += `<span>${discounts[id].type}</span>`;
-  discountDetails.innerHTML += `<span>${discounts[id].offer}</span>`;
-  discountDetails.innerHTML += "<button class='btn btn-dark'>Shop Now</button>";
+    let discountDetails = document.createElement("div");
+    discountDetails.classList.add(
+        "descount-details",
+        "d-flex",
+        "flex-column",
+        "gap-3",
+        "justify-content-center",
+        "align-self-center"
+    );
+    discountDetails.innerHTML = `<span>${discounts[id].brand}</span>`;
+    discountDetails.innerHTML += `<span>${discounts[id].type}</span>`;
+    discountDetails.innerHTML += `<span>${discounts[id].offer}</span>`;
+    discountDetails.innerHTML += "<button class='btn btn-dark'>Shop Now</button>";
 
-  let discountImage = document.createElement("img");
-  discountImage.src = discounts[id].imagePath;
-  discountImage.className = "h-100";
+    let discountImage = document.createElement("img");
+    discountImage.src = discounts[id].imagePath;
+    discountImage.className = "h-100";
 
-  return [discountDetails, discountImage];
+    return [discountDetails, discountImage];
 }
 
 let discountContainer = document.querySelector(
-  ".discount > div:not(:last-child) div"
+    ".discount > div:not(:last-child) div"
 );
 function slideDiscounts(id = discountIndex++, isBullitClicked) {
-  return function () {
-    if (discountIndex == discounts.length) discountIndex = 0;
-    discountContainer.style.scale = "0";
+    return function () {
+        if (discountIndex == discounts.length) discountIndex = 0;
+        discountContainer.style.scale = "0";
 
-    setTimeout(() => {
-      discountContainer.innerHTML = "";
+        setTimeout(() => {
+            discountContainer.innerHTML = "";
 
-      !isBullitClicked ? (id = discountIndex++) : id;
-      let nextDiscountDetails = getNextDiscountElements(id)[0];
-      discountContainer.appendChild(nextDiscountDetails);
-      let nextDiscountImage = getNextDiscountElements(id)[1];
-      discountContainer.appendChild(nextDiscountImage);
+            !isBullitClicked ? (id = discountIndex++) : id;
+            let nextDiscountDetails = getNextDiscountElements(id)[0];
+            discountContainer.appendChild(nextDiscountDetails);
+            let nextDiscountImage = getNextDiscountElements(id)[1];
+            discountContainer.appendChild(nextDiscountImage);
 
-      setTimeout(() => {
-        discountContainer.style.scale = "1";
-      }, 200);
-    }, 500);
-  };
+            setTimeout(() => {
+                discountContainer.style.scale = "1";
+            }, 200);
+        }, 500);
+    };
 }
 
 let autoSlideDiscount;
 document
-  .querySelectorAll(".discount .discount-pointers span ")
-  .forEach((bullit) => {
-    bullit.onclick = () => {
-      clearInterval(autoSlideDiscount);
-      let discountID = bullit.dataset.discountid;
-      slideDiscounts(discountID, true)();
-      setTimeout(() => {
-        startDiscountInterval();
-      }, 700);
-    };
-  });
+    .querySelectorAll(".discount .discount-pointers span ")
+    .forEach((bullit) => {
+        bullit.onclick = () => {
+            clearInterval(autoSlideDiscount);
+            let discountID = bullit.dataset.discountid;
+            slideDiscounts(discountID, true)();
+            setTimeout(() => {
+                startDiscountInterval();
+            }, 700);
+        };
+    });
 
 function startDiscountInterval() {
-  autoSlideDiscount = setInterval(slideDiscounts(), 5000);
+    autoSlideDiscount = setInterval(slideDiscounts(), 5000);
 }
 
 function toggleNavbar() {
-  document.querySelector(
-    "header .nav-bar .container button.humporgar"
-  ).onclick = () => {
-    document
-      .querySelector("header .nav-bar .container nav")
-      .classList.toggle("opened");
-  };
+    document.querySelector(
+        "header .nav-bar .container button.humporgar"
+    ).onclick = () => {
+        document
+            .querySelector("header .nav-bar .container nav")
+            .classList.toggle("opened");
+    };
 }
 
 toggleNavbar();
